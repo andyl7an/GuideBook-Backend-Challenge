@@ -3,7 +3,7 @@ Back-End Challenge: "Shifted List Search"
 Author: Andy Tan
 
 Notes:
-1. Function accepts a sorted (optionally rotated) list of integers as argument
+1. Function accepts a sorted (optionally rotated, no duplicate value) list of integers as argument
 2. The output is a single integer
 
 '''
@@ -40,7 +40,6 @@ def main():
     test4 = [10,1,2,3,4,5]
     test5 = [6,10,1,2,3,4,5]
     test6 = [2,3,4,5,6,7,8,9,10,1]
-    test7 = [10,10,1,2,3,4,5,5,6,6]
     out = search(test1)
     assert(11 == out)
     out = search(test2)
@@ -52,8 +51,6 @@ def main():
     out = search(test5)
     assert(10 == out)
     out = search(test6)
-    assert(10 == out)
-    out = search(test7)
     assert(10 == out)
 
 if __name__ == "__main__":
