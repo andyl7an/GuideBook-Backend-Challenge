@@ -17,9 +17,12 @@ def search(input):
     if (len(input) == 1 or input[left] < input[right]):
         return input[right]
     while (left <= right):
+        #same as (right - left) /2, rewritten to prevent overflow and converted to integer
         mid = int((right - left)/2 + left)
+        #left side is sorted, search right side
         if(input[left] <= input[mid]):
             left = mid 
+        #right side is sorted, search left side
         else:
             right = mid - 1
         #if the result is the same as previous iteration, ans is found
