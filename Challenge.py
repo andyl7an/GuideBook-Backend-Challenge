@@ -3,7 +3,7 @@ Back-End Challenge: "Shifted List Search"
 Author: Andy Tan
 
 Notes:
-1. Function accepts a sorted (optionally rotated, no duplicate value) list of integers as argument
+1. Function expects a sorted (optionally rotated, no duplicate value) list of integers as argument
 2. The output is a single integer
 
 '''
